@@ -1,7 +1,10 @@
 node_modules
 .venv/
 .env
+.env/
 .venv/
 __pycashe__
 *.py[cod]
 .DS_Store
+.next
+.next/
