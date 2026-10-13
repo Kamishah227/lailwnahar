@@ -1,0 +1,7 @@
+{
+  "dialect": "postgresql",
+  "schema": "./src/lib/schema.ts",
+  "dbCredentials": {
+    "url": "postgresql://postgres:Eshanshah12@db.actjqentubxrstprwywj.supabase.co:5432/postgres"
+  }
+}
