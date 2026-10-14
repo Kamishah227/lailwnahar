@@ -8,3 +8,5 @@ __pycashe__
 .DS_Store
 .next
 .next/
+# Local Netlify folder
+.netlify
