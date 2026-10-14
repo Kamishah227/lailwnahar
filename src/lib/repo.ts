@@ -40,8 +40,8 @@ export function handleDbError(error: unknown, fallback: string): never {
   if (/foreign key/i.test(message)) {
     throw new AppError("This record is referenced by other transactions and cannot be removed.", 409);
   }
-  console.error(`[db] ${fallback}:`, message);
-  throw new AppError(`${fallback}: ${message}`, 500);
+  console.error(`[db] ${fallback}`);
+  throw new AppError(fallback, 500);
 }
 
 /* ------------------------------------------------------------------ *

@@ -8,7 +8,7 @@ export function fail(error: unknown) {
   if (error instanceof AppError) {
     return Response.json({ ok: false, error: error.message }, { status: error.status });
   }
-  const message = error instanceof Error ? error.message : "Unexpected server error";
+  const message = "Unexpected server error";
   console.error("[api]", message);
   return Response.json({ ok: false, error: message }, { status: 500 });
 }
